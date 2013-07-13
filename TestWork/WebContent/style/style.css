@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+form.def{
+	    display : table;
+	    padding : 10px;
+	     margin : 0 auto;
+	     border : thin dotted #7e7e7e;
+   background-color : #e1ceb8;
+}
+
+div.tableRow {
+	    display : table-row;
+}
+
+div.tableRow p{
+	    display : table-cell;
+     vertical-align : top;
+	    padding : 1px;
+}
+
+div.tableRow p:first-child {
+	 text-align : right;
+}
+form p#oneee{
+	display : inline;
+	text-align: center;
+}
