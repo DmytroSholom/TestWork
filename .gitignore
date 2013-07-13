@@ -1,3 +1,10 @@
+.classpath
+.settings
+.project
+eclipse-build
+target
+docs
+logs
 *.class
 
 # Package Files #
