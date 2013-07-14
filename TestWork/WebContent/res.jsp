@@ -7,8 +7,10 @@
 <title>Result Page</title>
 </head>
 <body>
+<%@ page import="edu.test.model.user.StudentManager" %>
 <jsp:useBean id="companyBean" class="edu.test.model.user.StudentEntity" />
 <jsp:setProperty property="*" name="companyBean"/>
+<% StudentManager.addNew(companyBean); %>
 <div class="def">
 	 <div class="tableRow">
 	    <p> Прізвище: </p>

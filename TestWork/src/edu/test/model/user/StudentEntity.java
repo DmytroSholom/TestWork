@@ -1,6 +1,38 @@
 package edu.test.model.user;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="ASTUDENT")
 public class StudentEntity {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int ID; 
+	@Column(name="LNAME", nullable=false)
+	private String lname;
+	@Column(name="FNAME", nullable=false)
+	private String fname;
+	@Column(name="STARTDATE")
+	private String startDate;
+	@Column(name="ENDDATE")
+	private String endDate;
+	@Column(name="PASSWORD")
+	private String password;
+	
+	
+	public int getID() {
+		return ID;
+	}
+	public void setID(int iD) {
+		ID = iD;
+	}
 	public String getLname() {
 		return lname;
 	}
@@ -34,10 +66,6 @@ public class StudentEntity {
 	public StudentEntity(){
 	}
 	
-	private String lname;
-	private String fname;
-	private String startDate;
-	private String endDate;
-	private String password;
+	
 	
 }
