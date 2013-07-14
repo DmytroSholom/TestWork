@@ -12,6 +12,7 @@
 <%request.setCharacterEncoding("UTF-8"); %>
 <jsp:setProperty property="*" name="companyBean"/>
 <% StudentManager.addNew(companyBean); %>
+<!-- ffff -->
 <div class="def">
 	 <div class="tableRow">
 	    <p> Прізвище: </p>
