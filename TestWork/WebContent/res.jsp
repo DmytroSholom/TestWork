@@ -9,6 +9,7 @@
 <body>
 <%@ page import="edu.test.model.user.StudentManager" %>
 <jsp:useBean id="companyBean" class="edu.test.model.user.StudentEntity" />
+<%request.setCharacterEncoding("UTF-8"); %>
 <jsp:setProperty property="*" name="companyBean"/>
 <% StudentManager.addNew(companyBean); %>
 <div class="def">
