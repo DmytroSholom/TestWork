@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-	<form action="InputStudents" name="student" class="def" enctype="application/x-www-form-urlencoded">
+	<form action="res.jsp" method="POST" name="student" class="def" enctype="application/x-www-form-urlencoded">
 	    <div class="tableRow">
 	    <p> Прізвище: </p>
 		<p> <input type="text" name="lname" > </p>
